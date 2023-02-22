@@ -2,8 +2,9 @@ package main;
 
 public class Board {
     public String[] boardValues = { "0", "1", "2", "3", "4", "5", "6", "7", "8" };
+    boolean gameOver = false;
 
-    public void Draw_Board() {
+    public void drawBoard() {
         System.out.println();
         System.out.printf("%s | %s | %s%n", this.boardValues[0], this.boardValues[1], this.boardValues[2]);
         System.out.printf("--+---+--%n");
